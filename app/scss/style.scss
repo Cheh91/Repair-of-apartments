@@ -1,0 +1,104 @@
+@import "libs";
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    background-color: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgb(255,255,255) 0%, rgb(226,250,255) 25%, rgb(165,239,255) 50%, rgb(116,230,255) 75%, rgb(90,226,255) 100%);
+    background: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(226,250,255) 25%,rgb(165,239,255) 50%,rgb(116,230,255) 75%,rgb(90,226,255) 100%);
+    background: linear-gradient(to bottom, rgb(255,255,255) 0%,rgb(226,250,255) 25%,rgb(165,239,255) 50%,rgb(116,230,255) 75%,rgb(90,226,255) 100%);
+    height: 124px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header__outer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;  // нужен для центрирования по вертикали
+    
+}
+
+.header__logo{
+    a{
+        color: #000;
+        font-size: 34px;
+        display: flex;
+        span{
+            color: #b21111;
+            font-size: 18px;
+            text-transform: lowercase;
+            letter-spacing: 0px; 
+        }
+    }
+}
+
+.header__logo-left{
+    width: 300px;
+    .header__logo-text{  
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    a{
+        color: #111;
+        font-size: 18px;
+    }
+    li + li{
+        padding-left: 35px;
+    }
+}
+
+.contact{
+    width: 240px;
+    text-align: center;
+}
+
+.contact-text{
+    margin-bottom: 10px;
+}
+
+.contact-phone a{
+    font-size: 26px;
+    color: #111;
+    font-weight: 500;   
+}
+
+.header-button{
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 7px;
+    background-color: #2a7cf6;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff; 
+}
+
+
+
+
+
+
+
+@import "media";
