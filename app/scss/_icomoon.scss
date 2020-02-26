@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?clplss');
+    src:  url('../fonts/icomoon.eot?clplss#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?clplss') format('truetype'),
+      url('../fonts/icomoon.woff?clplss') format('woff'),
+      url('../fonts/icomoon.svg?clplss#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-badge:before {
+    content: "\e900";
+  }
+  .icon-exclamation-outline:before {
+    content: "\e901";
+  }
+  .icon-load-balancer:before {
+    content: "\e902";
+  }
+  .icon-search:before {
+    content: "\f002";
+  }
+  .icon-envelope-o:before {
+    content: "\f003";
+  }
+  .icon-user:before {
+    content: "\f007";
+  }
+  .icon-map-marker:before {
+    content: "\f041";
+  }
+  .icon-chevron-left:before {
+    content: "\f053";
+  }
+  .icon-chevron-right:before {
+    content: "\f054";
+  }
+  .icon-calendar:before {
+    content: "\f073";
+  }
+  .icon-trophy:before {
+    content: "\f091";
+  }
+  .icon-phone:before {
+    content: "\f095";
+  }
+  .icon-truck:before {
+    content: "\f0d1";
+  }
+  .icon-caret-down:before {
+    content: "\f0d7";
+  }
+  .icon-caret-up:before {
+    content: "\f0d8";
+  }
+  .icon-sitemap:before {
+    content: "\f0e8";
+  }
+  .icon-angle-left:before {
+    content: "\f104";
+  }
+  .icon-angle-right:before {
+    content: "\f105";
+  }
+  .icon-angle-up:before {
+    content: "\f106";
+  }
+  .icon-angle-down:before {
+    content: "\f107";
+  }
+  .icon-calendar-o:before {
+    content: "\f133";
+  }
+  .icon-rouble:before {
+    content: "\f158";
+  }
+  .icon-rub:before {
+    content: "\f158";
+  }
+  .icon-ruble:before {
+    content: "\f158";
+  }
+  .icon-calculator:before {
+    content: "\f1ec";
+  }
+  .icon-user-plus:before {
+    content: "\f234";
+  }
+  .icon-calendar-plus-o:before {
+    content: "\f271";
+  }
+  .icon-address-book-o:before {
+    content: "\f2ba";
+  }
+  
