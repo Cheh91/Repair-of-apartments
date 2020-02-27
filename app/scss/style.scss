@@ -18,6 +18,12 @@ ul{
     list-style: none;
 }
 
+.container{
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -239,22 +245,19 @@ body{
 
 .drop-down{
     width: 230px;
-    // margin: 20px;
-    
     text-align: center;
     position: relative;
-}
-
-.drop-down a{
-    background: #3d3d3d;
-    color: #fff;
-    padding: 5px;
-    // display: inline-block;
-    border-bottom: 2px solid #666;
-    transition: 0.5s all;
-    border-radius: 20px;
-
-}
+    a{
+        background: #3d3d3d;
+        color: #fff;
+        padding: 5px;
+        // display: inline-block;
+        border-bottom: 2px solid #666;
+        transition: 0.5s all;
+        border-radius: 20px;
+    
+    }
+} 
 
 .menu-drop{
     opacity: 0;
@@ -344,14 +347,9 @@ hr{
 .info__phone{
     margin-top: 25px;
     padding-left: 10px;
-}
-
-.info__phone{
     display: flex;
     align-items: center;
 }
-
-
 
 .input-phone{
     margin-left: 20px;
@@ -376,5 +374,288 @@ hr{
 }
 
 
+
+.invitation{
+    background-color: #dbf8ff;
+    height: 435px;
+    padding-top: 20px;
+}
+
+.wrapper__invitation{
+    width: 1230px;
+    height: 375px;
+    background-color: #fffcfc;
+    margin: 0 auto;
+    border: 1px solid #cccaca;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+.invitation__text{
+    padding-left: 100px;
+    margin-left: 20px;
+}
+
+.invitation__title{
+    font-size: 32px;
+    font-weight: 700;
+    width: 290px;
+    padding-bottom: 20px;
+    position: relative;
+    &:before{
+        position: absolute;
+        // font-family: "icomoon";
+        content: url(../img/roulette.png);
+        left: -100px;
+    }
+}
+
+.invitation__text-item{
+    font-size: 20px;
+    width: 685px;
+}
+
+.invitation__form{
+    width: 300px;
+}
+
+.invitation input{
+    color: #111;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c4c4c4;
+    font-size: 22px;
+    position: relative;
+}
+
+.invitation input:first-child{
+    margin-bottom: 20px;
+    
+}
+
+.invitation input::before{
+    font-family: "icomoon";
+    content: "\f095";
+    position: absolute;
+    // right: 0;
+    // top: 0;
+    
+}
+
+.invitation input::placeholder{
+    color: #c4c4c4;
+}
+
+.invitation__button{
+    margin-top: 15px;
+    border: 1px solid #c4c4c4;
+    background: none;
+    font-size: 20px;
+    padding: 10px 75px;
+    outline: none;
+    cursor: pointer;
+}
+
+.invitation__data{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    color: #8ea1a6;
+    a{
+        display: inline-block;
+        border-bottom: 1px solid #c4c4c4;
+        color: #8ea1a6;
+    }
+}
+
+// --------advantages---------
+// .advantages{
+//     height: 700px;
+// }
+
+.advantages__title{
+    text-align: center;
+    font-size: 32px;
+    color: #111;
+    padding-top: 40px;
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+
+.advantages__item{
+    display: flex;
+    width: 1250px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 115px;
+}
+
+.advantages__item-inner{
+    display: flex;
+    // align-items: center;
+}
+
+.advantages__item-text{
+    width: 280px;
+    padding-top: 20px;
+}
+
+.advantages__item-icon{
+    width: 65px;
+    height: 65px;
+    border-radius: 0 0 7px;
+    // background-color: green;
+    box-shadow: 15px 15px 25px rgba(217, 231, 254, 1);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.advantages__item-icon:before{
+    position: absolute;
+    // font-family: "icomoon";
+    // content: "\f2ba";
+    font-size: 35px;
+    left: 20px;
+    top: 16px;
+}
+
+.advantages__item-text{
+    font-size: 16px;
+}
+
+
+// --------------price__politics-------------
+
+.price-politics__title{
+    text-align: center;
+    font-size: 32px;
+    color: #111;
+    font-weight: 700;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.price-politics__services,
+.price-politics__separate{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding: 15px 35px;
+    background: none;
+    border: none;
+    border: 1px solid #cbcbcb;
+    outline: none;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #111;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.price-politics__services:hover,
+.price-politics__separate:hover{
+    // border: 2px solid #4e91f6;
+    box-shadow: 0 0 0 2px #4e91f6;
+}
+
+.wrapper__price-politics{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.price-politics__item{
+    max-width: 340px;
+    width: 100%;
+    // border: 1px solid red;
+    height: 660px;
+    position: relative;
+    margin-bottom: 60px;
+    &:hover{
+        outline: 1px solid #777;              // outline не дает сдвига контента в отличие от border 
+        box-shadow: 15px 15px 15px 0px  #e5e5e5, -10px -10px 10px 0px  #e5e5e5;
+        transition: 0.7s all;
+    }
+}
+
+.price-politics__item-price{
+    position: absolute;
+    content: "";
+    // left: auto;
+    // right: auto;
+    bottom: 110px;
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-ruble{
+    position: relative;
+    top: 2px;
+    font-size: 22px;
+}
+
+.price-politics__item-title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.price-politics__item-text{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding-left: 28px;
+    font-size: 17px;
+    position: relative;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #564f4f;
+        left: 0;
+        top: 4px;
+    }
+}
+
+.price-politics__item-price-last{
+    position: absolute;
+    content: "";
+    bottom: 110px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.wrapper__price-politics .price-politics{
+    position: absolute;
+    // content: "";
+    bottom: 40px;
+    font-size: 22px;
+    padding: 15px 37px;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 300px;
+    background: none;
+    border: 1px solid #cbcbcb;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.price-politics__item:hover .price-politics{   // чтобы появилась кнопка вместе с рамкой блока
+    display: block;
+}
 
 @import "media";
