@@ -30,7 +30,8 @@ gulp.task('scss', function(){
 
 gulp.task('css', function(){
     return gulp.src(['node_modules/normalize.css/normalize.css',
-                        'node_modules/magnific-popup/dist/magnific-popup.css'])
+                        'node_modules/magnific-popup/dist/magnific-popup.css',
+                        'node_modules/slick-carousel/slick/slick.css'])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('app/scss'))
         .pipe(browserSync.reload({stream: true}))
@@ -49,7 +50,8 @@ gulp.task('script', function(){
 
 
 gulp.task('js', function(){
-    return gulp.src(['node_modules/magnific-popup/dist/jquery.magnific-popup.js'])
+    return gulp.src(['node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+        'node_modules/slick-carousel/slick/slick.js'])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
