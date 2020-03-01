@@ -109,12 +109,11 @@ body{
     color: #fff; 
 }
 
+// ---------------info----------------
+
 .info{
     background-image: url(../img/image-bg.jpg);
-    // height: 1080px;
-    // width: 100%;
     height: 100vh;
-    // height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -123,7 +122,6 @@ body{
 }
 
 .info__item-left{
-    // border: 1px solid red;
     margin-left: 200px;
 }
 
@@ -143,22 +141,79 @@ body{
 }
 
 .info__left-text{
-    // display: block;
     font-size: 28px;
     width: 510px;
     color: #fff;
     padding-top: 30px;
 }
 
-.info__item-advantages{
-    // position: relative;
-    // border: 3px solid green;
+.info__item-block{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 600px;
     margin-top: 70px;
 }
+
+.block__one,
+.block__two,
+.block__three,
+.block__four{
+    background-color: rgba(255, 255, 255, .7);
+    padding: 5px 5px 5px 65px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    width: 270px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 5px;
+    position: relative;
+    span{
+        font-weight: 400; 
+    }
+}
+
+.block__one:before{
+    position: absolute;
+    font-family: "icomoon";
+    content: "\f0d1";
+    left: 12px;
+    top: 15px;
+    font-size: 30px;
+    color: #3b393a;
+}
+
+.block__two:before{
+    position: absolute;
+    font-family: "icomoon";
+    content: "\f1ec";
+    left: 12px;
+    top: 15px;
+    font-size: 30px;
+    color: #3b393a;
+}
+
+.block__three:before{
+    position: absolute;
+    font-family: "icomoon";
+    content: "\f158";
+    left: 12px;
+    top: 15px;
+    font-size: 30px;
+    color: #3b393a;
+}
+
+.block__four:before{
+    position: absolute;
+    font-family: "icomoon";
+    content: "\f002";
+    left: 12px;
+    top: 15px;
+    font-size: 30px;
+    color: #3b393a;
+}
+
+
 
 
 .info__item-right{
@@ -205,7 +260,6 @@ body{
 .menu-drop{
     opacity: 0;
     transition: 0.5s opacity;
-    // display: none;
     position: absolute;
     top: -9999em;
     
@@ -225,10 +279,6 @@ body{
     transition: 0.5s all;
 }
 
-// .drop-down-first .menu-drop a{
-//     border-radius: 0px;
-// }
-
 .menu-drop a:hover{
     background: #666;
     padding: 5px 0 5px 10px;
@@ -247,14 +297,6 @@ body{
 }
 
 /* Всплывающее меню*/
-
-// .drop-down-first{
-//     position: relative;
-// }
-
-// .menu-drop{
-//     position: absolute;
-// }
 
 .info__text{
     display: flex;
@@ -316,7 +358,7 @@ hr{
     margin-top: 25px;
 }
 
-
+// ------------invitation--------------
 
 .invitation{
     background-color: #dbf8ff;
@@ -349,7 +391,6 @@ hr{
     position: relative;
     &:before{
         position: absolute;
-        // font-family: "icomoon";
         content: url(../img/roulette.png);
         left: -100px;
     }
@@ -382,9 +423,6 @@ hr{
     font-family: "icomoon";
     content: "\f095";
     position: absolute;
-    // right: 0;
-    // top: 0;
-    
 }
 
 .invitation input::placeholder{
@@ -414,65 +452,6 @@ hr{
 }
 
 // --------advantages---------
-// .advantages{
-//     height: 700px;
-// }.advantages__one,
-.advantages__two,
-.advantages__three,
-.advantages__four{
-    background-color: rgba(255, 255, 255, .7);
-    padding: 5px 5px 5px 65px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    width: 270px;
-    font-size: 18px;
-    line-height: 24px;
-    border-radius: 5px;
-    position: relative;
-    span{
-        font-weight: 400; 
-    }
-}
-
-.advantages__one:before{
-    position: absolute;
-    font-family: "icomoon";
-    content: "\f0d1";
-    left: 12px;
-    top: 15px;
-    font-size: 30px;
-    color: #3b393a;
-}
-
-.advantages__two:before{
-    position: absolute;
-    font-family: "icomoon";
-    content: "\f1ec";
-    left: 12px;
-    top: 15px;
-    font-size: 30px;
-    color: #3b393a;
-}
-
-.advantages__three:before{
-    position: absolute;
-    font-family: "icomoon";
-    content: "\f158";
-    left: 12px;
-    top: 15px;
-    font-size: 30px;
-    color: #3b393a;
-}
-
-.advantages__four:before{
-    position: absolute;
-    font-family: "icomoon";
-    content: "\f002";
-    left: 12px;
-    top: 15px;
-    font-size: 30px;
-    color: #3b393a;
-}
 
 
 .advantages__title{
@@ -495,7 +474,6 @@ hr{
 
 .advantages__item-inner{
     display: flex;
-    // align-items: center;
 }
 
 .advantages__item-text{
@@ -507,7 +485,6 @@ hr{
     width: 65px;
     height: 65px;
     border-radius: 0 0 7px;
-    // background-color: green;
     box-shadow: 15px 15px 25px rgba(217, 231, 254, 1);
     margin-right: 20px;
     margin-bottom: 20px;
@@ -516,8 +493,6 @@ hr{
 
 .advantages__item-icon:before{
     position: absolute;
-    // font-family: "icomoon";
-    // content: "\f2ba";
     font-size: 35px;
     left: 20px;
     top: 16px;
@@ -528,7 +503,7 @@ hr{
 }
 
 
-// --------------price__politics-------------
+// --------------price-politics-------------
 
 .price-politics__title{
     text-align: center;
@@ -584,8 +559,6 @@ hr{
 .price-politics__item-price{
     position: absolute;
     content: "";
-    // left: auto;
-    // right: auto;
     bottom: 110px;
     font-size: 24px;
     font-weight: 700;
@@ -660,26 +633,6 @@ hr{
 .price-politics__item:hover .price-politics{   // чтобы появилась кнопка вместе с рамкой блока
     display: block;
 }
-
-// // ----------------additional__advantages-----------------
-
-// .additional__advantages{
-//     background-image: url(../img/image-bg-2.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     height: 100vh;
-// }
-
-// .additional__advantages-title{
-//     text-align: center;
-//     font-size: 32px;
-//     font-weight: 700;
-//     padding-top: 50px;
-//     margin-bottom: 175px;
-//     color: #cbcbcb;
-//     width: 430px;
-//     margin: 0 auto;
-// }
 
 // --------------masters-----------------
 
@@ -765,7 +718,6 @@ hr{
 
 .example__item-slider-item img{
     width: 800px;
-    // transform: translate(0%, 10%);
     img{
         margin: 0 auto;
     }
@@ -1055,12 +1007,7 @@ hr{
 .reviews{
     margin-top: 120px;
     margin-bottom: 180px;
-
 }
-
-// .reviews__slider-photo{
-//     display: inline;
-// }
 
 .reviews__title{
     font-size: 32px;
@@ -1077,7 +1024,7 @@ hr{
     font-size: 20px;
     margin-bottom: 110px;
     a{
-        // display: inline-block;
+        display: inline-block;
         text-decoration: underline;
         color: #4c7dfc;
     }
@@ -1215,12 +1162,6 @@ hr{
     width: 565px;
     padding-top: 30px;
     position: relative;
-    // &:before{
-    //     position: absolute;
-    //     content: url(../img/benefits-1.png);
-    //     left: -1px;
-    //     top: -70px;
-    // }
 }
 
 
@@ -1314,5 +1255,133 @@ hr{
     margin-bottom: 100px;
 }
 
+// -----------------form----------------
+
+.form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form__block{
+    width: 1364px;
+    height: 365px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.form__block-left{
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+.form__block-title{
+    padding-left: 70px;
+    font-size: 32px;
+    color: #111;
+    font-weight: 700;
+    width: 340px;
+    position: relative;
+    &:before{
+        position: absolute;
+        content: "\f1ec";
+        font-family: "icomoon";
+        left: 0;
+    }
+}
+
+.form__block-text{
+    padding-top: 35px;
+    padding-left: 70px;
+    font-size: 20px;
+    width: 470px;
+}
+
+.form__data{
+    padding-left: 70px;
+    padding-top: 25px;
+    font-size: 20px;
+    color: #b3b3b3;
+    a{
+        display: inline-block;
+        color: #b3b3b3;
+        text-decoration: underline;
+    }
+}
+
+.form__block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__block-right{
+    width: 280px;
+    margin-top: 70px;
+    margin-right: 280px;
+    input{
+        color: #111;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #c4c4c4;
+        font-size: 22px;
+        position: relative;
+    }
+}
+
+.form__block-right input:first-child{
+    margin-bottom: 20px;
+}
+
+// -------------map--------------
+
+.map iframe{
+    width: 100%;
+    height: 550px;
+}
+
+// ---------------footer---------------
+
+.footer{
+    background-color: #e2faff;
+    height: 415px;
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    padding-top: 135px;
+    a{
+        color: #111;
+    }
+    
+}
+
+.footer__phone,
+.footer__adress,
+.footer__mail{
+    position: relative;
+}
+
+.icon-phone,
+.icon-map-marker,
+.icon-envelope-o{
+    margin-top: 10px;
+    font-size: 24px;
+    position: absolute;
+    top: -13px;
+    left: -30px;
+}
+
+.footer__block{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 215px;
+    font-size: 16px;
+    color: #717d80;
+    a{
+        color: #717d80;
+        text-decoration: underline;
+    }
+}
 
 @import "media";
