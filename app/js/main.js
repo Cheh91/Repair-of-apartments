@@ -37,6 +37,15 @@ $(function(){
         //         }
         //     }
         // ] 
+    });
+
+    $('.reviews__slider').slick({
+        dots: false,
+        fade: true,
+        // autoplay: true,
+        speed: 1000,
+        infinite: true,
+        centerMode: true,
     })
 
 });
