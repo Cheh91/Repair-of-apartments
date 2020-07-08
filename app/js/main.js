@@ -13,7 +13,7 @@ $(function(){
             {
                 breakpoint: 768,
                 settings: {
-                    arrows: false,
+                    // arrows: false,
                     centerMode: false,
                 }
             }
@@ -37,5 +37,19 @@ $(function(){
         infinite: true,
         centerMode: true,
     })
+
+    $(".header__menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 2000);
+    });
+
+    $(document).ready(function(){
+        $(".drop__down-item").click(function(){
+            $(this).next(".menu-drop").toggle();
+        })
+    })
+        
 
 });
