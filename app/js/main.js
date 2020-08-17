@@ -49,7 +49,10 @@ $(function(){
         $(".drop__down-item").click(function(){
             $(this).next(".menu-drop").toggle();
         })
-    })
+    });
+
+
+    new WOW().init();
         
 
 });

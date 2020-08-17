@@ -27,6 +27,8 @@ ul{
 
 body{
     font-family: 'Roboto', sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
 }
 
 .header{
@@ -42,8 +44,6 @@ body{
 .header__outer-container{
     display: flex;
     justify-content: space-between;
-    // flex-wrap: wrap;
-    // order: 1;
     align-items: center;
     height: 100%;  // нужен для центрирования по вертикали
     
@@ -142,7 +142,6 @@ body{
     
     &__left-text{
         font-size: 28px;
-        // width: 510px;
         color: #fff;
         padding-top: 30px;
     }
@@ -156,10 +155,8 @@ body{
 .info__left-title{
     font-size: 60px;
     font-weight: 700;
-    // width: 500px;
     color: #000;
     span{
-        // color: #4c7dfc;
         color: greenyellow;
     }
     sup{
@@ -237,7 +234,6 @@ body{
 }
 
 .wrapper__info-right{
-    // border: 1px solid red;
     margin: 20px;
 }
 
@@ -261,7 +257,6 @@ body{
         background: #3d3d3d;
         color: #fff;
         padding: 5px;
-        // display: inline-block;
         border-bottom: 2px solid #666;
         transition: 0.5s all;
         border-radius: 20px; 
@@ -519,7 +514,6 @@ hr{
 }
 
 
-
 // --------------price-politics-------------
 
 .price-politics__title{
@@ -550,7 +544,6 @@ hr{
 
 .price-politics__services:hover,
 .price-politics__separate:hover{
-    // border: 2px solid #4e91f6;
     box-shadow: 0 0 0 2px #4e91f6;
 }
 
@@ -631,7 +624,6 @@ hr{
 
 .price-politics__wrapper .price-politics{
     position: absolute;
-    // content: "";
     bottom: 40px;
     font-size: 22px;
     padding: 15px 37px;
@@ -663,7 +655,6 @@ hr{
     }
     &__wrapper{
         display: flex;
-        // justify-content: space-around;
     }
     
     &__item{
@@ -1046,7 +1037,7 @@ hr{
     }
     &__slider-wrapper{
         // display: flex;
-        flex-direction: row;
+        // flex-direction: row;
         margin-top: 17px;
         margin-left: 10px;
         width: 600px;
@@ -1419,7 +1410,6 @@ hr{
     &__block{
         display: flex;
         justify-content: space-around;
-        // flex-wrap: wrap;
         margin-top: 215px;
         font-size: 16px;
         color: #717d80;
