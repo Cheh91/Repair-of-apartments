@@ -52,7 +52,11 @@ $(function(){
     });
 
 
-    new WOW().init();
+    new WOW(
+        {
+            mobile: false
+        }
+    ).init();
         
 
 });
