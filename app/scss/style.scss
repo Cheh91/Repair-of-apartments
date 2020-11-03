@@ -127,13 +127,14 @@ body{
 .info{
     background-image: url(../img/image-bg.jpg);
     background-position: center center;
-    height: 100vh;
+    // height: 100vh;  
     background-repeat: no-repeat;
     background-size: cover;
     &__wrapper{
         display: flex;
         justify-content: space-between;
         padding-top: 100px;
+        padding-bottom: 50px;
     }
     &__item-left{
         margin-left: 200px;
